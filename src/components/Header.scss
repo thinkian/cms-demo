@@ -1,0 +1,148 @@
+.tc-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0.75em 0;
+
+  &--static {
+    background-color: $black;
+  }
+
+  &--fixed {
+    position: fixed;
+    height: 60px;
+    background-color: rgba($black, 0.9);
+    transition: background-color 0.3s ease-in;
+
+    .tc-logo {
+      width: auto;
+      height: auto;
+      background: none;
+      color: $white;
+      font: 700 1.5em/1.2 $sans-serif;
+    }
+  }
+
+  > .tc-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.tc-logo {
+  display: inline-block;
+  vertical-align: top;
+  font: 0/0 a;
+  color: transparent;
+  text-decoration: none;
+  text-shadow: none;
+  width: 80px;
+  height: 75px;
+  border: 0;
+  background: url('../images/think-logo.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $widthLarge) {
+    width: 300px;
+    background-size: auto;
+  }
+}
+
+.tc-navigation {
+  flex-grow: 1;
+  max-width: 500px;
+
+  &-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+
+    > li {
+      margin-right: 1.5em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-link {
+    color: $white;
+    font-size: 1.125em;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: lighten($primary, 25%);
+    }
+
+    > .fas {
+      margin-right: 0.5em;
+    }
+
+    &-text {
+      display: none;
+
+      @media (min-width: $widthMedium) {
+        display: inline;
+      }
+    }
+  }
+}
+
+.tc-search {
+  height: 24px;
+
+  &-button {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    color: $white;
+    font-family: $sans-serif;
+    font-size: 1.125em;
+    cursor: pointer;
+    -webkit-appearance: none;
+
+    &:hover,
+    &:focus {
+      color: lighten($primary, 25%);
+    }
+
+    > .fas {
+      margin-right: 0.5em;
+    }
+
+    &-input {
+      width: 0;
+      padding: 0.25em 0.5em;
+      border: 0;
+      font-family: $sans-serif;
+      font-size: 0.875em;
+      height: 18px;
+      transition: width 0.4s ease-out, visibility 0.2s 0.1s;
+      visibility: hidden;
+    }
+  }
+
+  &-form {
+    display: inline;
+  }
+
+  &--expanded {
+    .tc-search-button-input {
+      width: 80px;
+      padding: 0.25em 0.5em;
+      border: 1px solid #ccc;
+      transition: width 0.4s ease-in;
+      visibility: visible;
+
+      @media (min-width: $widthLarge) {
+        width: 150px;
+      }
+    }
+  }
+}

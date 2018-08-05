@@ -1,0 +1,53 @@
+$primary: #6fa40d;
+$secondary: #3a9dcd;
+$bodyCopy: #333;
+$white: #fff;
+$black: #000;
+$gray: #e4e4e4;
+
+$widthMedium: 720px;
+$widthLarge: 960px;
+
+$sans-serif: 'Open Sans', 'Helvetica Neue', sans-serif;
+$serif: 'Merriweather', Georgia, serif;
+
+html,
+body {
+  color: $bodyCopy;
+  font-family: $sans-serif;
+  margin: 0;
+}
+
+@import '../components/Announcements';
+@import '../components/Header';
+@import '../components/Hero';
+@import '../components/Post';
+
+.tc-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $widthLarge) {
+    padding: 0;
+  }
+}
+
+.tc-layout {
+  &--home {
+    @media (min-width: $widthLarge) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0;
+    }
+  }
+
+  &--post {
+    padding-top: 100px;
+
+    > .tc-container {
+      max-width: 800px;
+    }
+  }
+}

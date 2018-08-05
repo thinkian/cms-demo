@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "title": "CHEESE DAY 2018",
+      "date": "July 13, 2018",
+      "time": "5pm - 9pm",
+      "location": "Philadelphia Think Space, 111 S 15th St"
+    },
+    {
+      "title": "PWA Meetup",
+      "date": "May 24, 2018",
+      "time": "5pm - 9pm",
+      "location": "Philadelphia Think Space, 111 S 15th St"
+    },
+    {
+      "title": "Urban Axes!",
+      "date": "May 18, 2018",
+      "time": "5pm - 7:30pm",
+      "location": "Urban Axes Philadelphia, 2019 E Boston St"
+    }
+  ]
+}

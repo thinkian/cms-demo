@@ -1,0 +1,50 @@
+.tc-announcements {
+  margin: 3em 0 2em;
+  padding-top: 1em;
+  border-top: 2px solid $gray;
+
+  &-title {
+    color: $bodyCopy;
+    font-size: 1.5em;
+    line-height: 1;
+    margin: 0.25em 0;
+  }
+
+  @media (min-width: $widthLarge) {
+    width: 300px;
+    border-top: 0;
+    border-left: 2px solid $gray;
+    padding-top: 0;
+    padding-left: 2em;
+  }
+}
+
+.tc-event {
+  &-list {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      width: 230px;
+    }
+  }
+
+  &-title {
+    color: $secondary;
+    margin-bottom: 0.5em;
+  }
+
+  &-date,
+  &-location {
+    display: block;
+  }
+
+  &-location {
+    &:first-of-type {
+      font-style: italic;
+    }
+  }
+}
