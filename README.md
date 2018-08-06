@@ -1,32 +1,21 @@
-# gatsby-starter-blog-no-styles
-[Gatsby](https://www.gatsbyjs.org/) starter for creating a blog, without the CSS and typography included in the official [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog).
+# CMS Demo
 
-The gatsby-starter-blog makes some decisions about styling that you might not want (inline css, react-responsive-grid, gatsby-plugin-typography/compass-vertical-rhythm). 
+This project is intended to be used as a design template for the CMS Bake-off. It was built with [Gatsby](https://www.gatsbyjs.org/).
 
-In my case, I want to use [Styled Components](https://www.styled-components.com/) (which Gatsby also has a [plugin](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-styled-components) for), so I ousted the aforementioned libraries and styles first and thought this no-styles starter could be useful to others.
+## Getting Started
 
-## Get Blogging
+1. Install Gatsby-CLI
 
-1) Install Gatsby-CLI
+   `npm install --global gatsby-cli`
 
-    `npm install --global gatsby-cli`
+2. Run Development Server
 
-2) Create new Gatsby project using this starter
+   `gatsby develop`
 
-    `gatsby new my-gatsby-blog https://github.com/noahg/gatsby-starter-blog-no-styles`
+3. Build static assets
 
-3) Run Development Server
+   `gatsby build`
 
-    `gatsby develop`
+4. Deploy
 
-4) Add Posts
-    
-    See the example posts in the folder `src/pages` and use the same naming convention. e.g. `/2017-09-13-post-title/index.md`
-
-5) Deploy
-
-    Follow [the Gatsby docs](https://www.gatsbyjs.org/tutorial/part-one/#deploying-gatsbyjs-websites-on-the-web) for a super easy way to deploy using surge.sh  
-
-
-
-
+   Follow [the Gatsby docs](https://www.gatsbyjs.org/tutorial/part-one/#deploying-gatsbyjs-websites) for a super easy way to deploy using [Surge](https://surge.sh/)
